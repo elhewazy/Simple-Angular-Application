@@ -1,0 +1,20 @@
+<p>my-component works!</p>
+<h1>{{title}}</h1>
+
+<div>
+    <ul>
+        <li *ngFor="let item of mylist">{{item}}</li>
+    </ul>
+</div>
+<div [ngSwitch]="names">
+    <h1 *ngSwitchCase="'ahmed'">ngSwitches hello my name is {{names}}</h1>
+    <h1 *ngSwitchCase="'mohamed'">ngSwitches hello my name is {{names}}</h1>
+    <h1 *ngSwitchCase="''">ngSwitches no name to show </h1>
+    <h1 *ngSwitchDefault > this default message </h1>
+</div>
+<div>
+    <h1 *ngIf="names == 'mohamed'">ngIf  {{names}}</h1>
+</div>
+<h1>{{myInfoFromDataService.firstName}}</h1>
+<h1>{{myInfoFromDataService.lastName}}</h1>
+<h1>{{myInfoFromDataService.email}}</h1>
